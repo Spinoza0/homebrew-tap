@@ -7,8 +7,8 @@ class ClaudeClineProxy < Formula
   depends_on "python@3"
 
   resource "aiohttp" do
-    url "https://files.pythonhosted.org/packages/8f/ed/22f2eb6c147499535ddfd439172aee071c2e5da2bee633cfabd1338baeb3/aiohttp-3.11.16.tar.gz"
-    sha256 "fa1455f6d469c21e098b2195a2424f8e7cb31b2b089b70e2c2df84a83af1fff8"
+    url "https://files.pythonhosted.org/packages/f1/d9/1c4721d143e14af753f2bf5e3b681883e1f24b592c0482df6fa6e33597fa/aiohttp-3.11.16.tar.gz"
+    sha256 "16f8a2c9538c14a557b4d309ed4d0a7c60f0253e8ed7b6c9a2859a7582f8b1b8"
   end
 
   def install
