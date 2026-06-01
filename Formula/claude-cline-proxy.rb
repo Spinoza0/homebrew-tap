@@ -1,8 +1,8 @@
 class ClaudeClineProxy < Formula
   desc "Run Claude Code CLI through any Cline provider via a local API proxy"
   homepage "https://github.com/Spinoza0/claude-cline-proxy"
-  url "https://github.com/Spinoza0/claude-cline-proxy/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "6a1b3105a3fad563f6a2b189f765d9409d6fff7ce0a56cac4b8a0f2f521456ed"
+  url "https://github.com/Spinoza0/claude-cline-proxy/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "b50300c9d9d6be61cbf6def490c948ab793fc7a0042a5af17cc823bee854ecfd"
 
   depends_on "python@3"
 
@@ -11,7 +11,7 @@ class ClaudeClineProxy < Formula
     system libexec/"venv/bin/python3", "-m", "pip", "install", "-q", "aiohttp"
 
     bin.install "claude-cline.sh" => "claude-cline"
-    libexec.install "claude-cline-proxy.py"
+    libexec.install "claude-cline-proxy.py", "claude-cline-select.py"
     etc.install "claude-cline-mcp.json"
     doc.install "README.md", "AGENTS.md"
   end
