@@ -1,20 +1,21 @@
 class ClaudeClineProxy < Formula
+  include Language::Python::Virtualenv
+
   desc "Run Claude Code CLI through any Cline provider via a local API proxy"
   homepage "https://github.com/Spinoza0/claude-cline-proxy"
-  url "https://github.com/Spinoza0/claude-cline-proxy/archive/refs/tags/v1.0.0.tar.gz"
-   sha256 "0127ba66ce525749f81d92da01516d0f968410cce393637abfce310a25c19187"
+  url "https://github.com/Spinoza0/claude-cline-proxy/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "bbf5af57af59232fa012c8586175f6c9bedac741b45981b7e72caea0ed73342a"
 
   depends_on "python@3"
 
   def install
+    venv = virtualenv_create(libexec, "python3")
+    venv.pip_install "aiohttp"
+
     bin.install "claude-cline.sh" => "claude-cline"
     libexec.install "claude-cline-proxy.py"
     etc.install "claude-cline-mcp.json"
     doc.install "README.md", "AGENTS.md"
-  end
-
-  def post_install
-    system "python3", "-m", "pip", "install", "--break-system-packages", "aiohttp"
   end
 
   def caveats
