@@ -1,8 +1,8 @@
 class OllamaScripts < Formula
   desc "Bash scripts to manage Ollama on macOS (Homebrew)"
   homepage "https://github.com/Spinoza0/ollama-scripts"
-  url "https://github.com/Spinoza0/ollama-scripts/archive/refs/tags/v1.4.tar.gz"
-  sha256 "ae47fd2262b70139320c1491b1d839a042b31b22f327f5c7be5afc0fe477ee35"
+  url "https://github.com/Spinoza0/ollama-scripts/archive/refs/tags/v1.5.tar.gz"
+  sha256 "d37c8d5bc4eb52941e6c84d59e672f899f957c4e5e2cd437af6d839628a5c488"
 
   depends_on :macos
 
