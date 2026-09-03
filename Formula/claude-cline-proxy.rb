@@ -1,8 +1,8 @@
 class ClaudeClineProxy < Formula
   desc "Run Claude Code CLI through any Cline provider via a local API proxy"
   homepage "https://github.com/Spinoza0/claude-cline-proxy"
-  url "https://github.com/Spinoza0/claude-cline-proxy/archive/refs/tags/v1.7.8.tar.gz"
-  sha256 "bd25660ba2c9afc205e4f7dc67154375044ec28b07449fc8fb10566764313c9e"
+  url "https://github.com/Spinoza0/claude-cline-proxy/archive/refs/tags/v1.7.9.tar.gz"
+  sha256 "c4ab95a2e27630a714e0b614aacd1eb152faca48c5e551ca740b5ceea2c0284f"
 
   depends_on "python@3"
 
