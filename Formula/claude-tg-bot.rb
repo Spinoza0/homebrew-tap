@@ -1,8 +1,8 @@
 class ClaudeTgBot < Formula
   desc "Run Claude Code via a Telegram userbot"
   homepage "https://github.com/Spinoza0/claude-tg-bot"
-  url "https://github.com/Spinoza0/claude-tg-bot/archive/refs/tags/v0.7.12.tar.gz"
-  sha256 "7a499e06077aba8f14037b1726c7ec4fc3874f7910d761870d62a035ff983053"
+  url "https://github.com/Spinoza0/claude-tg-bot/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "706ff68da19122618128c859499f8bdf986a30207821d015184d9a3caa4f8be5"
 
   depends_on "python@3"
 
