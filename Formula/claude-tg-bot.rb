@@ -25,7 +25,7 @@ class ClaudeTgBot < Formula
 
   def caveats
     <<~EOS
-      Configure the bot (interactive setup, creates ~/.claude-tg-bot/config.env):
+      Configure the bot (interactive setup, creates or updates ~/.claude-tg-bot/config.env):
         claude-tg-bot-setup
       Then launch it:
         claude-tg-bot
